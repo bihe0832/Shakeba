@@ -20,7 +20,9 @@
 
 	[http://sj.qq.com/myapp/detail.htm?apkName=com.bihe0832.shakeba](http://sj.qq.com/myapp/detail.htm?apkName=com.bihe0832.shakeba)
 
-**备注：由于目前1.2 版本存在OOM的问题因此还没有发布，所有对外下载地址都只能下载到1.1.0版本。1.2版本请点击链接[摇吧1.2开发版下载地址](https://github.com/bihe0832/Shakeba/blob/master/Server/download/shakeba-release-1.2.0pre-20170208.apk)下载。**
+- **备注：**
+
+	**由于目前1.2 版本存在OOM的问题因此还没有发布，所有对外下载地址都只能下载到1.1.0版本。1.2版本请点击链接[摇吧1.2开发版下载地址](https://github.com/bihe0832/Shakeba/blob/master/Server/download/shakeba-release-1.2.0pre-20170208.apk)下载。**
 
 ### 官网
 
@@ -36,9 +38,7 @@
 
 ### Demo效果
 
-<video src="./shakeba_intro.mp4" width="320" height="240" controls="controls">
-Your browser does not support the video tag.
-</video>
+![扫码下载摇吧](./shakeba_intro.gif )
 
 ## 其他
 
