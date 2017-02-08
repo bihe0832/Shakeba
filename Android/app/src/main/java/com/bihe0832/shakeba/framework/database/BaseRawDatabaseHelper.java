@@ -8,6 +8,7 @@ import com.bihe0832.shakeba.libware.thread.ShakebaThreadManager;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
@@ -33,8 +34,12 @@ public abstract class BaseRawDatabaseHelper {
 
     public void buildDatabaseAsync(){
         File file = Shakeba.getInstance().getApplicationContext().getDatabasePath(getDatabaseName());
+
         if(!file.exists()){
             try {
+                if(!file.getParentFile().exists()){
+                    file.getParentFile().mkdirs();
+                }
                 InputStream myInput = Shakeba.getInstance().getApplicationContext().getResources().openRawResource(getRawDatabaseResID());
                 OutputStream myOutput = new FileOutputStream(file);
 
@@ -56,17 +61,22 @@ public abstract class BaseRawDatabaseHelper {
 
     private boolean checkDBIsGood(){
         File file = Shakeba.getInstance().getApplicationContext().getDatabasePath(getDatabaseName());
-        SQLiteDatabase database = SQLiteDatabase.openOrCreateDatabase(file, null);
-        int versionInRawDB = database.getVersion();
-        int versionInCode = getDatabaseVersion();
-        Logger.d("file Exist:" + file.exists() + ";versionInRawDB:" + versionInRawDB + ";versionInCode:" + versionInCode);
         if(file.exists()){
-            if (versionInRawDB != versionInCode) {
-                database.close();
-                file.delete();
+            try{
+                SQLiteDatabase database = SQLiteDatabase.openOrCreateDatabase(file, null);
+                int versionInRawDB = database.getVersion();
+                int versionInCode = getDatabaseVersion();
+                Logger.d("file Exist:" + file.exists() + ";versionInRawDB:" + versionInRawDB + ";versionInCode:" + versionInCode);
+                if (versionInRawDB != versionInCode) {
+                    database.close();
+                    file.delete();
+                    return false;
+                }else{
+                    return true;
+                }
+            }catch (Exception e){
+                e.printStackTrace();
                 return false;
-            }else{
-                return true;
             }
         }else{
             return false;
