@@ -1,7 +1,5 @@
 # Shakeba
 
-代码整理中，将于近期开源~
-
 ## 项目简介
 
 - 功能介绍
@@ -21,6 +19,8 @@
 - 应用宝官网下载
 
 	[http://sj.qq.com/myapp/detail.htm?apkName=com.bihe0832.shakeba](http://sj.qq.com/myapp/detail.htm?apkName=com.bihe0832.shakeba)
+
+**备注：由于目前1.2 版本存在OOM的问题因此还没有发布，所有对外下载地址都只能下载到1.1.0版本。1.2版本请点击链接[摇吧1.2开发版下载地址](https://github.com/bihe0832/Shakeba/blob/master/Server/download/shakeba-release-1.2.0pre-20170208.apk)下载。**
 
 ### 官网
 
