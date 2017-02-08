@@ -36,6 +36,7 @@
 
 - 如何随apk一起打包并使用SQLite：[http://blog.bihe0832.com/sqlite-raw-db.html](http://blog.bihe0832.com/sqlite-raw-db.html) 
 
+- 封装HttpURLConnection实现的简单的网络请求库：[https://github.com/bihe0832/Android-HttpURLConnection](https://github.com/bihe0832/Android-HttpURLConnection)
 ### Demo效果
 
 ![扫码下载摇吧](./shakeba_intro.gif )
