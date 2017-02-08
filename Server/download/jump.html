@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel = "Shortcut Icon" href="http://shakeba.bihe0832.com/web/images/shakeba_32.ico" />
+<meta name="author" CONTENT="子勰(bihe0832), code@bihe0832.com" />
+<meta name="keywords" content="摇吧" />
+<meta name="description" content="摇吧是子勰开发的一款基于手机摇一摇功能的小游戏或者游戏助手集合。目前摇吧已经支持骰子战争。摇吧中，所有游戏的使用方法都是摇一摇，打开手机摇一摇，体验摇吧带来的乐趣吧！" />
+<title>欢迎使用摇吧</title>
+
+<link rel="stylesheet" type="text/css" href="http://microdemo.bihe0832.com/res/css/global.css" />
+<script type="text/javascript" src="http://microdemo.bihe0832.com/res/js/brower.js" charset="UTF-8"></script>
+
+<style type="text/css">
+ body{
+        background: #0a5175;
+        color:#eee;
+        font:14px/1.5 Tahoma;
+        margin:0;
+        padding:0;
+      }
+      .how-app{padding:6px 15px;}
+</style>
+
+
+<script type="text/javascript">
+window.onload = function(){
+  document.getElementById("tips").innerHTML = "";
+  var path = "http://shakeba.bihe0832.com/";
+  var MultiQrcodeLink = {
+    PC: path +"download/index.html",
+    android: "http://sj.qq.com/myapp/detail.htm?apkName=com.bihe0832.shakeba",
+    unknow: path + "m/index.html"
+  };
+  var wechatTips = "由于微信平台限制，系统无法主动下载应用，请点击界面右上角菜单，然后选择用系统浏览器打开链接来下载应用！";
+  if(ZixieJS.browser.isPc()){
+      window.location.href = MultiQrcodeLink.PC;
+  }else{
+    var app = ZixieJS.browser.getSuperAPP();
+    var devices = ZixieJS.browser.getDevices();
+    if(ZixieJS.browser.devices.ipad == devices){
+      document.getElementById("tips").innerHTML = "ipad版本尚未发布，敬请期待！系统将在三秒后跳转到摇吧首页";
+      jumpURL(MultiQrcodeLink.unknow);
+    }else if(ZixieJS.browser.devices.iphone == devices){
+      document.getElementById("tips").innerHTML = "iphone版本尚未发布，敬请期待！系统将在三秒后跳转到摇吧首页";
+      jumpURL(MultiQrcodeLink.unknow);
+    }else if(ZixieJS.browser.devices.android == devices){
+      // if(ZixieJS.browser.app.wechat == app){
+      //   document.getElementById("tips").innerHTML = wechatTips;
+      // }else{
+        window.location.href = MultiQrcodeLink.android;
+      // }
+    }else if(ZixieJS.browser.devices.winPhone == devices){
+      document.getElementById("tips").innerHTML = "windows phone 版本尚未发布，敬请期待！系统将在三秒后跳转到摇吧首页";
+      jumpURL(MultiQrcodeLink.unknow);
+    }else{
+      document.getElementById("tips").innerHTML = "版本尚未发布，敬请期待！系统将在三秒后跳转到摇吧首页";
+      jumpURL(MultiQrcodeLink.unknow);
+    }
+  }
+};
+
+function jumpURL(url){
+  var t=setTimeout("window.location=\""+url+"\";",3000);
+}
+
+</script>
+</head>
+<body>
+<div class="how-app">
+ <span id="tips"></span>
+ </div>
+ <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37805902" charset="UTF-8"></script>
+</body>
+</html>

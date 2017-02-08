@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel = "Shortcut Icon" href="http://shakeba.bihe0832.com/web/images/shakeba_32.ico" />
+    <meta name="author" CONTENT="子勰(bihe0832), code@bihe0832.com" />
+    <meta name="keywords" content="摇吧" />
+    <meta name="description" content="摇吧是子勰开发的一款基于手机摇一摇功能的小游戏或者游戏助手集合。目前摇吧已经支持骰子战争。摇吧中，所有游戏的使用方法都是摇一摇，打开手机摇一摇，体验摇吧带来的乐趣吧！" />
+    <title>欢迎使用摇吧</title>
+
+    <script type="text/javascript" src="http://microdemo.bihe0832.com/res/js/brower.js" charset="UTF-8"></script>
+
+    <script type="text/javascript"> 
+   var system ={
+       win : false,
+       mac : false,
+       xll : false
+     };
+     var p = navigator.platform;
+     system.win = p.indexOf("Win") == 0;
+     system.mac = p.indexOf("Mac") == 0;
+     system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+     if(!(system.win||system.mac||system.xll)){
+        // window.location.href="./jump.html";
+     }
+    </script>
+<style type="text/css">
+    .color-white{
+        color:#eee;
+      }
+      .hover-white:hover{
+        color:#ccc;
+        font-size: 105%;
+      }
+</style>
+
+	<!--[if lt IE 9]>
+	  <style type="text/css">
+	    .services{
+	      display:none;
+	    }
+	    .text-center p{
+	    /*解决低版本IE没有边界问题*/
+	    	text-align: center;
+	    }
+	    .list-inline{
+	    	margin-top: 30px;
+	    }
+	    </style>
+	<![endif]-->
+	<!--[if lte IE 7]>
+	  <style type="text/css">
+		  .vert-text{
+		      margin-top: 15%;
+		  }
+		  .list-inline li{
+	    	display: inline;
+   			list-style-type: none;
+	    }
+	    .caption{
+	    	left:0;
+	    	padding:0px 0px;
+	    	margin:-10px;
+		}
+	  </style>
+	<![endif]-->
+    <script src="./../web/js/jquery.js"></script>
+
+</head>
+<body>
+    <div id="top" class="header">
+      <div class="vert-text">
+       <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center color-white">
+            <h2>下载摇吧</h2>
+            <hr>
+            <BR>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 text-center">
+            <div class="service-item  color-white" >
+              <i class="service-icon icon-windows " onclick="showtips(0);"></i>
+              <h3>下载到电脑传手机</h3>
+              <h4><a class="color-white hover-white" href="http://sj.qq.com/myapp/detail.htm?apkName=com.bihe0832.shakeba">点击前往应用宝官网下载</a></h4>
+            </div>
+          </div>
+          <div class="col-md-3 text-center" >
+            <div class="service-item color-white">
+              <i class="service-icon icon-android " onclick="showtips(1);"></i>
+              <h3>Android 下载</h3>
+              <img alt="扫描下载摇吧" src="./shakeba_download_200.png">
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="service-item color-white">
+              <i class="service-icon icon-apple" onclick="showtips(0);"></i>
+              <h3>IOS 下载</h3>
+              <h4>开发中，敬请期待</h4>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="service-item color-white">
+              <i class="service-icon icon-html5" onclick="showtips(1);"></i>
+              <h3>H5 游戏</h3>
+             <h4>开发中，敬请期待</h4>
+            </div>
+          </div>
+      </div>
+      <!--   <img alt="扫描下载摇吧" src="./../web/images/shakeba_download.jpg">
+       	<h3>来到摇吧，你就摇吧！</h3>
+        <a href="#intro" class="btn btn-default btn-lg">点击开始精彩</a> -->
+      </div>
+        </div>
+    
+    </div>
+    <!-- /Full Page Image Header Area -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-inline">
+                <li><a href="http://shakeba.bihe0832.com/" target="_blank">摇吧首页</a></li>
+                <li><a href="http://shakeba.bihe0832.com/download/jump.html" target="_blank">摇吧下载</a></li>
+                <li><a href="http://blog.bihe0832.com/" target="_blank">作者博客</a></li>
+      				  <li><a href="http://shakeba.bihe0832.com/m/help.html" target="_blank">使用说明</a></li>
+      				  <li><a href="http://shakeba.bihe0832.com/m/version.html" target="_blank">版本介绍</a></li>
+            </ul>
+            <hr>
+            <span>
+              Copyright &copy; 2013 - 2015 （子勰 | bihe0832） All Rights Reserved
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+   <!-- Bootstrap core CSS -->
+   <link href="./../web/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Add custom CSS here -->
+   <link href="./../web/css/style.min.css" rel="stylesheet">
+   <link href="./../web/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <link href="./../web/css/scoll.css" rel="stylesheet">
+    
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  
+  <script src="./../web/js/bootstrap.js"></script>
+  <script src="./../web/js/jquery.slides.min.js"></script>
+
+  <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
+  <script>
+ 	var tips = new Array("额~ 这是不能点的!","唉~ 这真的是不能乱点的!","好吧~ 这么爱点你就点吧!","点点点点点~ 你多无聊呀!");
+ 	var time = -1;
+  	function showtips (i){
+  		if(time > tips.length - 2){
+			time = 0;
+			location.hash="callout";
+			alert(tips[tips.length - 1]);
+			return 0;
+		}
+  		if(time > -1){
+  			alert(tips[time]);
+  			time ++;
+  		}else{
+  			alert(tips[i]);
+  			time = i + 1;
+  		}
+  	}
+     $("#menu-close").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+     });
+  </script>
+  <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+  </script>
+  <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+              || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=25799863" charset="UTF-8"></script>
+  </body>
+</html>

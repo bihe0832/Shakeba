@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+        <!--   your app's branding color (for the app bar) -->
+        <item name="colorPrimary">@color/blue_1</item>
+        <!--   darker variant of colorPrimary (for status bar, contextual app bars) -->
+        <item name="colorPrimaryDark">@color/blue_3</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/blue_4</item>
+    </style>
+
+    <!--<dimen name="activity_horizontal_margin">16dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+
+    <style name="CheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/com_bihe0832_shakeba_checkbox_style</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <dimen name="game_item_text_size">@dimen/text_size_42</dimen>
+    <color name="game_item_text_color">@color/gray_white</color>
+
+
+    <color name="toast_background_color">@color/white</color>
+    <color name="toast_text_color">@color/color_black</color>
+    <dimen name="toast_padding">5dp</dimen>
+    <dimen name="toast_img_size">25dp</dimen>
+    <dimen name="toast_text_margin">8dp</dimen>
+
+    <color name="webview_background_color">@color/blue_0</color>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <integer name="navigation_item_game_id">1</integer>
+
+
+    <string name="app_name">摇吧</string>
+    <string name="app_slogan">来到摇吧 你就摇吧</string>
+    <string name="app_version_name">V1.2</string>
+    <integer name="app_version_code">14</integer>
+    <string name="splash_start_btn_text">开启 摇吧</string>
+
+    <string name="game_start_toast">您当前进入的游戏是：%1$s</string>
+
+    <string name="link_author">file:///android_asset/author.html</string>
+    <string name="link_help">file:///android_asset/help.html</string>
+    <string name="link_version">file:///android_asset/version.html</string>
+    <string name="link_feedback">http://shakeba.bihe0832.com/m/feedback.php</string>
+
+    <string name="menu_key_go_home">回到首页</string>
+    <string name="menu_key_back_game">回到游戏</string>
+    <string name="menu_key_help">使用帮助</string>
+    <string name="menu_key_feedback">反馈建议</string>
+    <string name="menu_key_start">启动页面</string>
+    <string name="menu_key_update">检查更新</string>
+    <string name="menu_key_shakeba">关于摇吧</string>
+    <string name="menu_key_me">关于作者</string>
+    <string name="menu_key_share">分享摇吧</string>
+
+    <string name="fragment_name_select_game">游戏助手</string>
+    <string name="fragment_name_game_rule">游戏规则</string>
+
+
+    <string name="share_title">分享摇吧给朋友</string>
+    <string name="share_text">摇吧是一款基于摇一摇的小游戏集合。来到摇吧，你就尽情摇吧。快点击 http://shakeba.bihe0832.com/download/index.html 下载吧！！！</string>
+
+    <string name="game_update_isnew_toast">您当前的版本（%1$s）已经是最新版本了！</string>
+    <string name="game_update_notnew_Title">摇吧有版本啦！</string>
+    <string name="game_update_notnew_desc">摇吧最新版（%1$s）已经发布啦，您要现在更新么？</string>
+    <string name="game_update_notnew_update_btn">确认更新</string>
+    <string name="game_update_notnew_cancle_btn">取消更新</string>
+
+    <string name="game_start_game_not_found">游戏“%1$s”打开失败，请重试或体验其余游戏。</string>
+
+</resources>

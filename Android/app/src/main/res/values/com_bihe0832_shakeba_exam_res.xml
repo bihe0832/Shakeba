@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="exam_back_text">单项选择题</string>
+
+    <string name="exam_error_text">对不起，我也不会</string>
+
+    <string-array name="exam_item_text_arr">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>最长的答案</item>
+        <item>最短的答案</item>
+    </string-array>
+
+</resources>

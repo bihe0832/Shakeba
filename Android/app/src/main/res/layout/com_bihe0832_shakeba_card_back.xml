@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/main_fl_card_back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:padding="@dimen/card_padding"
+        android:layout_marginLeft="@dimen/card_margin_left"
+        android:layout_marginRight="@dimen/card_margin_left"
+        android:layout_marginTop="@dimen/card_margin_top"
+        android:layout_marginBottom="@dimen/card_margin_top"
+        android:src="@drawable/com_bihe0832_shakeba_card_rectangle_back"/>
+
+    <TextView
+        android:id="@+id/cardBackTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/card_back_text_size"
+        android:textColor="@color/card_back_text_color"
+        android:text=""/>
+
+</FrameLayout>

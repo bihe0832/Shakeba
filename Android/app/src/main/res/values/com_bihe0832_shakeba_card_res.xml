@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="card_background_color">@color/blue_0</color>
+
+    <dimen name="card_margin_left">30dp</dimen>
+    <dimen name="card_margin_top">50dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+
+    <dimen name="card_back_text_size">@dimen/text_size_32</dimen>
+    <color name="card_back_text_color">@color/gray_white</color>
+    <dimen name="card_front_title_text_size">@dimen/text_size_24</dimen>
+    <dimen name="card_front_content_text_size">@dimen/text_size_16</dimen>
+    <color name="card_front_text_color">@color/gray_white</color>
+
+    <integer name="card_anim_length">2000</integer>
+    <integer name="card_anim_half_length">1000</integer>
+
+</resources>

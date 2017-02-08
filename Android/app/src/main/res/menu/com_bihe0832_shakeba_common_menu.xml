@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single">
+        <item
+        android:id="@+id/navigation_item_home"
+        android:checked="true"
+        android:orderInCategory="0"
+        android:icon="@drawable/iconfont_home"
+        android:title="@string/menu_key_go_home" />
+
+        <item
+            android:id="@+id/navigation_item_game"
+            android:icon="@drawable/iconfont_game"
+            android:orderInCategory="@integer/navigation_item_game_id"
+            android:title="@string/menu_key_back_game"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/navigation_item_help"
+            android:icon="@drawable/iconfont_help"
+            android:orderInCategory="2"
+            android:title="@string/menu_key_help" />
+
+        <item
+            android:id="@+id/navigation_item_update"
+            android:icon="@drawable/iconfont_update"
+            android:orderInCategory="3"
+            android:title="@string/menu_key_update" />
+
+        <item
+            android:id="@+id/navigation_item_feedback"
+            android:icon="@drawable/iconfont_about"
+            android:orderInCategory="4"
+            android:title="@string/menu_key_feedback" />
+
+        <item
+            android:id="@+id/navigation_item_share"
+            android:icon="@drawable/iconfont_share"
+            android:orderInCategory="5"
+            android:title="@string/menu_key_share" />
+
+        <item
+            android:id="@+id/navigation_item_shakeba"
+            android:icon="@drawable/shake_gray"
+            android:orderInCategory="6"
+            android:title="@string/menu_key_shakeba" />
+
+        <item
+            android:id="@+id/navigation_item_me"
+            android:icon="@drawable/iconfont_blog"
+            android:orderInCategory="7"
+            android:title="@string/menu_key_me" />
+    </group>
+
+</menu>

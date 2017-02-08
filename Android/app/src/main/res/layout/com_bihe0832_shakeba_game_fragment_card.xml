@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_fl_container"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/card_background_color"
+        android:layout_height="match_parent"
+        android:layout_weight="0.94">
+
+
+
+        <include
+            layout="@layout/com_bihe0832_shakeba_card_front"/>
+
+        <include
+            layout="@layout/com_bihe0832_shakeba_card_back"/>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <dimen name="dice_imgLayout_paddingTop">20dp</dimen>
+    <dimen name="dice_imgLayout_paddingBottom">20dp</dimen>
+
+    <dimen name="dice_barrle_height">255dp</dimen>
+
+    <dimen name="dice_diceResult_marginButtom">10dp</dimen>
+
+    <dimen name="dice_lockbtn_marginBottom">10dp</dimen>
+    <dimen name="dice_sortBtn_marginBottom">20dp</dimen>
+
+</resources>

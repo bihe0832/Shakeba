@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="adventure_back_text">真心话大冒险</string>
+    <string name="adventure_question_text">真心话</string>
+    <string name="adventure_task_text">大冒险</string>
+
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:background="@color/dice_background_color"
+        android:layout_height="match_parent"
+        android:layout_weight="0.94">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/diceLayoutSeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/diceSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dice_seek_paddingTop"
+                    android:paddingBottom="@dimen/dice_seek_paddingBottom"
+                    android:max="7"
+                    android:progress="5"
+                    android:progressDrawable="@drawable/com_bihe0832_shakeba_process_seekbar_po"/>
+
+                <TextView
+                    android:id="@+id/diceTextViewSeekBarNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dice_seekResult_height"
+                    android:layout_gravity="center_vertical|left"
+                    android:textSize="@dimen/dice_seekResult_textSize"
+                    android:textColor="@color/dice_text_color"
+                    android:paddingLeft="@dimen/dice_seekResult_marginLeft"
+                    android:text="@string/dice_seekbar_default" />
+
+                <LinearLayout
+                    android:id="@+id/diceCheckBoxLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dice_checkBoxLayout_marginTop"
+                    android:layout_marginBottom="@dimen/dice_checkBoxLayout_marginBottom"
+                    android:paddingLeft="@dimen/dice_seekResult_marginLeft"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/diceCheckBoxLock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="@dimen/dice_checkBoxLayout_textSize"
+                        android:textColor="@color/dice_text_color"
+                        android:shadowColor="@color/darkGreen"
+                        android:layout_weight="0.5"
+                        style="@style/CheckboxTheme"
+                        android:text="@string/dice_checkbox_lock" />
+
+                    <CheckBox
+                        android:id="@+id/diceCheckBoxSort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.5"
+                        style="@style/CheckboxTheme"
+                        android:checked="true"
+                        android:textSize="@dimen/dice_checkBoxLayout_textSize"
+                        android:textColor="@color/dice_text_color"
+                        android:text="@string/dice_checkbox_sort" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/diceLayoutImg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diceLayoutSeekBar"
+                android:paddingBottom="@dimen/dice_imgLayout_paddingBottom"
+                android:paddingTop="@dimen/dice_imgLayout_paddingTop"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/diceImgLayoutTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_vertical"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/diceImgLayoutBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/diceImgLayoutTop"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/diceImgLayoutPre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/diceBarrleImg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dice_barrle_height"
+                android:layout_marginBottom="@dimen/dice_barrle_marginBottom"
+                android:src="@drawable/dice_barrel"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/diceTextViewDiceNumSum"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|left"
+                android:layout_height="@dimen/dice_diceResult_height"
+                android:paddingLeft="@dimen/dice_diceResult_marginLeft"
+                android:layout_marginBottom="@dimen/dice_diceResult_marginButtom"
+                android:textSize="@dimen/dice_diceResult_textSize"
+                android:textColor="@color/dice_text_color"
+                android:text="@string/dice_tips_dice_result"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/diceBtnLock"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dice_btn_heigt"
+                android:layout_marginLeft="@dimen/dice_sortBtn_marginLeftAndRight"
+                android:layout_marginRight="@dimen/dice_sortBtn_marginLeftAndRight"
+                android:layout_marginBottom="@dimen/dice_lockbtn_marginBottom"
+                android:background="@drawable/com_bihe0832_shakeba_button_style"
+                android:text="@string/dice_btn_lock_lock"
+                android:textColor="@color/dice_text_color"
+                android:textSize="@dimen/dice_diceResult_textSize"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/diceBtnSort"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dice_btn_heigt"
+                android:layout_marginLeft="@dimen/dice_sortBtn_marginLeftAndRight"
+                android:layout_marginRight="@dimen/dice_sortBtn_marginLeftAndRight"
+                android:background="@drawable/com_bihe0832_shakeba_button_style"
+                android:text="@string/dice_btn_sort_sort"
+                android:textColor="@color/dice_text_color"
+                android:layout_marginBottom="@dimen/dice_sortBtn_marginBottom"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

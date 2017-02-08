@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/main_fl_card_front"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:padding="@dimen/card_padding"
+        android:layout_marginLeft="@dimen/card_margin_left"
+        android:layout_marginRight="@dimen/card_margin_left"
+        android:layout_marginTop="@dimen/card_margin_top"
+        android:layout_marginBottom="@dimen/card_margin_top"
+        android:src="@drawable/com_bihe0832_shakeba_card_rectangle_front"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/card_padding"
+        android:layout_marginLeft="@dimen/card_margin_left"
+        android:layout_marginRight="@dimen/card_margin_left"
+        android:layout_marginTop="@dimen/card_margin_top"
+        android:layout_marginBottom="@dimen/card_margin_top"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/cardFrontTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/card_front_title_text_size"
+            android:textColor="@color/card_front_text_color"
+            android:text=""
+             />
+
+        <TextView
+            android:id="@+id/cardFrontContentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_margin_left"
+            android:layout_marginRight="@dimen/card_margin_left"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/card_front_content_text_size"
+            android:textColor="@color/card_front_text_color"
+            android:text=""
+             />
+    </LinearLayout>
+
+
+</FrameLayout>

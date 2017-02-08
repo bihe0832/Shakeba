@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel = "Shortcut Icon" href="./css/shakeba_32.ico" />
+    <meta name="author" CONTENT="子勰(bihe0832), code@bihe0832.com" />
+    <meta name="keywords" content="摇吧" />
+    <meta name="description" content="摇吧是子勰开发的一款基于手机摇一摇功能的小游戏或者游戏助手集合。目前摇吧已经支持骰子战争。摇吧中，所有游戏的使用方法都是摇一摇，打开手机摇一摇，体验摇吧带来的乐趣吧！" />
+  <title>摇吧版本历史页面</title>
+
+  <link rel="stylesheet" type="text/css" href="./css/global.css" />
+  <style type="text/css">
+
+      body {
+          font-family: "Microsoft Yahei", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+          color: #333;
+          background-color: #f2f2f2;
+          line-height: 30px;
+          clear: both;
+      }
+
+      dt:hover{
+        background:#eeecec;
+      }
+      dt{
+        border-bottom:1px solid #ccc;
+        padding-left:10px;
+        line-height: 45px;
+        font-weight:bold;
+      }
+      dd{
+        border-bottom:1px solid #ccc;
+        padding-left:20px;
+      }
+      li:before{content:'●';margin-right:6px;}
+  </style>
+</head>
+<body>
+ 
+<dl id="faq">
+    <dt>摇吧介绍</dt>
+    <dd>
+        摇吧是子勰开发的一款基于手机摇一摇功能的小游戏或者游戏助手集合。目前摇吧已经支持骰子战争。
+    </dd>
+
+    <dt>摇吧1.1主要更新</dt>
+    <dd>
+        <ul>
+            <li>骰子战争增加自动排序、自动锁定!</li>
+            <li>增加闪屏动画重放功能</li>
+            <li>优化用户提示弹出框</li>
+            <li>增加沉浸式状态栏</li>
+            <li>部分bug修复</li>
+
+        </ul>
+    </dd>
+
+    <dt>摇吧1.0主要更新</dt>
+    <dd>
+        <ul>
+            <li>发布游戏骰子战争!</li>
+            <li>增加分享摇吧给好友。</li>
+            <li>增加反馈建议给开发者。</li>
+            <li>增加更新机制。</li>
+        </ul>
+    </dd>
+</dl>
+
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#faq').find('dd').hide();
+  $('#faq').find('dt').click(function() {
+   var answer = $(this).next(); 
+   if (answer.is(':visible')) {
+    answer.slideUp();
+   } else {
+    answer.slideDown();
+   }
+  });
+});
+</script>
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=37805902" charset="UTF-8"></script>
+</body>
+</html>

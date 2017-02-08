@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dice_background_color">@color/blue_0</color>
+    <color name="dice_text_color">@color/white</color>
+
+    <string name="dice_back_text">骰子战争</string>
+
+    <!-- dice_layout-->
+    <string name="dice_checkbox_lock">自动锁定结果</string>
+    <string name="dice_checkbox_sort">自动排序结果</string>
+
+    <!--DiceView.java-->
+    <string name="dice_btn_lock_lock">点击锁定</string>
+    <string name="dice_btn_lock_unlock">点击解锁</string>
+    <string name="dice_btn_sort_unsort">点击还原</string>
+    <string name="dice_btn_sort_sort">点击整理</string>
+    <string name="dice_btn_restart">再来一次</string>
+
+    <string name="dice_tips_dice_result">您本次摇一摇的点数之和为：</string>
+    <string name="dice_seekbar_default">您选择同时摇动 5 个骰子</string>
+    <string name="dice_seekbar_stop">您选择同时摇动 %1$s 个骰子</string>
+    <string name="dice_seekbar_start">您要选择同时摇动 %1$s 个骰子</string>
+    <string name="dice_seekbar_changed">您当前选择同时摇动 %1$s 个骰子</string>
+
+
+    <dimen name="dice_seek_paddingTop">15dp</dimen>
+    <dimen name="dice_seek_paddingBottom">15dp</dimen>
+
+    <dimen name="dice_seekResult_height">30dp</dimen>
+    <dimen name="dice_seekResult_textSize">@dimen/text_size_16</dimen>
+    <dimen name="dice_seekResult_marginLeft">20dp</dimen>
+
+    <dimen name="dice_checkBoxLayout_textSize">@dimen/text_size_16</dimen>
+    <dimen name="dice_checkBoxLayout_marginTop">10dp</dimen>
+    <dimen name="dice_checkBoxLayout_marginBottom">15dp</dimen>
+    <dimen name="dice_checkBoxLayout_paddingLeft">20dp</dimen>
+
+    <dimen name="dice_imgLayout_paddingTop">50dp</dimen>
+    <dimen name="dice_imgLayout_paddingBottom">50dp</dimen>
+
+    <dimen name="dice_barrle_marginBottom">40dp</dimen>
+    <dimen name="dice_barrle_height">345dp</dimen>
+
+    <dimen name="dice_diceResult_height">30dp</dimen>
+    <dimen name="dice_diceResult_textSize">@dimen/text_size_16</dimen>
+    <dimen name="dice_diceResult_marginLeft">20dp</dimen>
+    <dimen name="dice_diceResult_marginButtom">15dp</dimen>
+    <dimen name="dice_lockbtn_marginBottom">20dp</dimen>
+    <dimen name="dice_btn_heigt">48dp</dimen>
+    <dimen name="dice_sortBtn_marginBottom">40dp</dimen>
+    <dimen name="dice_sortBtn_marginLeftAndRight">10dp</dimen>
+</resources>
