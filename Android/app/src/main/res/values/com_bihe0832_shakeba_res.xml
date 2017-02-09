@@ -70,7 +70,7 @@
 
     <string name="game_update_isnew_toast">您当前的版本（%1$s）已经是最新版本了！</string>
     <string name="game_update_notnew_Title">摇吧有版本啦！</string>
-    <string name="game_update_notnew_desc">摇吧最新版（%1$s）已经发布啦，您要现在更新么？</string>
+    <string name="game_update_notnew_desc">摇吧最新版（%1$s）已经发布啦，立即更新？</string>
     <string name="game_update_notnew_update_btn">确认更新</string>
     <string name="game_update_notnew_cancle_btn">取消更新</string>
 

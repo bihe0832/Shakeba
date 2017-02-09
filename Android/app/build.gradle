@@ -8,8 +8,6 @@ android {
         applicationId "com.bihe0832.shakeba"
         minSdkVersion 12
         targetSdkVersion 23
-        versionCode 14
-        versionName "1.2"
     }
 
     buildTypes {

@@ -12,7 +12,7 @@ import org.json.JSONException;
 public abstract class HttpResponse {
     public static final String TAG = "YSDK_RSP";
 	public static final String HTTP_RESP_PARAM_RET = "ret";
-    public static final String HTTP_RESP_PARAM_CODE = "errcode";
+    public static final String HTTP_RESP_PARAM_CODE = "ecode";
 	public static final String HTTP_RESP_PARAM_MSG = "msg";
 	public static final String HTTP_RESP_PARAM_ERRCODE = "flag";
 	
