@@ -27,7 +27,7 @@
 ### 运行方法
 
 如何修改配置及运行工程，请参考本人博客：[终端基于gradle的开源项目运行环境配置指引](
-http://blog.bihe0832.com/android-as-gradle-config.html)
+https://blog.bihe0832.com/android-as-gradle-config.html)
 
 ### 官网
 
@@ -37,9 +37,9 @@ http://blog.bihe0832.com/android-as-gradle-config.html)
 
 ### 相关文档
 
-- 摇吧—来到摇吧，那就摇吧：[http://blog.bihe0832.com/shakeba.html](http://blog.bihe0832.com/shakeba.html)
+- 摇吧—来到摇吧，那就摇吧：[https://blog.bihe0832.com/shakeba.html](https://blog.bihe0832.com/shakeba.html)
 
-- 如何随apk一起打包并使用SQLite：[http://blog.bihe0832.com/sqlite-raw-db.html](http://blog.bihe0832.com/sqlite-raw-db.html) 
+- 如何随apk一起打包并使用SQLite：[https://blog.bihe0832.com/sqlite-raw-db.html](https://blog.bihe0832.com/sqlite-raw-db.html) 
 
 - 封装HttpURLConnection实现的简单的网络请求库：[https://github.com/bihe0832/Android-HttpURLConnection](https://github.com/bihe0832/Android-HttpURLConnection)
 ### Demo效果
